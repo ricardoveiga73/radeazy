@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gravador de Áudio</title>
+</head>
+<body>
+    <button id="recordButton">Gravar</button>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+    <!-- Inclua as bibliotecas do Firebase necessárias -->
+    <!-- Certifique-se de usar a mesma versão (9.22.1) do Firebase SDK -->
+
+    <script type="module">
+        // Importe a função 'initializeApp' corretamente da versão 9.22.1
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+
+        // Sua configuração do Firebase
+        const firebaseConfig = {
+    		apiKey: "AIzaSyBMS8Ha4pg8y2uIpiyBmk8fxnDzulD61E8",
+    		authDomain: "grava-radio.firebaseapp.com",
+    		projectId: "grava-radio",
+    		storageBucket: "grava-radio.appspot.com",
+    		messagingSenderId: "119208767054",
+    		appId: "1:119208767054:web:e1e8da7af798670e52dd1f"
+        };
+
+        // Inicialize o Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
